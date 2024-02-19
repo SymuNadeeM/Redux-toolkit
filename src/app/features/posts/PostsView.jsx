@@ -13,6 +13,7 @@ const PostsView = () => {
     <div>
        {isLoading && <h3>Loading.....</h3>}
        {error && <h3>{error}</h3>}
+       <section>
        {posts.map((post)=>{
         return (
           <article>
@@ -20,6 +21,7 @@ const PostsView = () => {
           </article>
         )
        })}
+       </section>
     </div>
   );
 };
